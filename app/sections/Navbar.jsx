@@ -12,7 +12,7 @@ export default function Navbar() {
 
     return (
         <nav className="sticky top-0 left-0 w-full bg-black text-white z-50 shadow-md pt-10 mb-10">
-            <div className="container mx-auto flex items-center justify-between px-6 py-4">
+            <div className="container mx-auto flex items-center justify-between px-6 py-4 md:px-16 md:py-6">
                 {/* Logo */}
                 <div> <Image src="/logo.png" alt="logo" width="50" height="30"  className="md:w-[70px] md:h-[46px]"/> </div>
 

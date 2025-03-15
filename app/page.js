@@ -15,9 +15,9 @@ export default function Home() {
 
       <Work />
 
-      <Pricing />
+      <Pricing id="pricing"/>
 
-      <Faq />
+      <Faq id="faqs"/>
 
       <Footer />
 
