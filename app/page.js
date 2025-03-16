@@ -4,20 +4,60 @@ import Work from "./sections/Work";
 import Pricing from "./sections/Pricing";
 import Faq from "./sections/Faq";
 import Footer from "./sections/Footer";
+
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
       <Hero />
 
-      <div>Carousel</div>
+      <section className="flex items-center flex-col mb-20 w-full">
+        <h2 className="text-[38px] md:text-[48px] text-center w-[245px] md:w-full leading-[38px] md:leading-[48px] pb-6 tracking-[-4%]">Design that works for <span className="font-goudy italic">you!</span></h2>
+        <Carousel
+          opts={{
+            loop: true,
+            align: "center",
+          }}
+          className="w-full max-w-lg"
+        >
+          <CarouselContent className="flex items-center gap-4">
+            {["/img3.png", "/img1.png", "/img5.png", "/img6.png"].map((src, index) => (
+              <CarouselItem
+                key={index}
+                className="basis-3/4 sm:basis-1/2 md:basis-1/3 w-auto"
+              >
+                <div className="w-full h-[330px] md:h-[501px] relative">
+                  <Image
+                    src={src}
+                    alt={`image-${index}`}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </section>
 
       <Business />
 
       <Work />
 
-      <Pricing id="pricing"/>
+      <Pricing id="pricing" />
 
-      <Faq id="faqs"/>
+      <Faq id="faqs" />
 
       <Footer />
 
@@ -177,52 +217,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Dark Radial */}
-        <section className="flex flex-wrap gap-4 justify-center">
-          <div
-            className="w-[360px] h-[470px] flex items-center justify-center text-white font-bold text-2xl rounded-3xl"
-            style={{
-              background:
-                "linear-gradient(to bottom left, #7B17B9 0%, #FA8C9A 45%, #902700 100%)",
-            }}
-          >
-            48-hour <br />
-            iteration cycles
-          </div>
-
-          <div
-            className="w-[360px] h-[470px] flex items-center justify-center text-white font-bold text-2xl rounded-3xl"
-            style={{
-              background:
-                "linear-gradient(to bottom left, #0D4504 0%, #211B1B 39%, #271022 63%, #2B0606 100%)",
-            }}
-          >
-            48-hour <br />
-            iteration cycles
-          </div>
-
-          <div
-            className="w-[360px] h-[470px] flex items-center justify-center text-white font-bold text-2xl rounded-3xl"
-            style={{
-              background:
-                "linear-gradient(to bottom left, #4A3400 0%, #322A16 39%, #092727 63%, #001D35 100%)",
-            }}
-          >
-            48-hour <br />
-            iteration cycles
-          </div>
-
-          <div
-            className="w-[360px] h-[470px] flex items-center justify-center text-white font-bold text-2xl rounded-3xl"
-            style={{
-              background:
-                "linear-gradient(to bottom left, #00384E 0%, #270C2A 53%, #2A0001 100%)",
-            }}
-          >
-            48-hour <br />
-            iteration cycles
-          </div>
-        </section>
+     
       </section>
     </>
   );

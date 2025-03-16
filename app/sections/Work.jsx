@@ -3,7 +3,7 @@ import React from 'react'
 function Work() {
   return (
     <div>
-      Work
+     <h2>!</h2>
     </div>
   )
 }
