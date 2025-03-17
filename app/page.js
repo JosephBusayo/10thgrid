@@ -14,40 +14,45 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image";
+import Heading from "@/components/ui/heading";
 
 export default function Home() {
   return (
     <>
       <Hero />
 
-      <section className="flex items-center flex-col mb-20 w-full">
-        <h2 className="text-[38px] md:text-[48px] text-center w-[245px] md:w-full leading-[38px] md:leading-[48px] pb-6 tracking-[-4%]">Design that works for <span className="font-goudy italic">you!</span></h2>
+      <section className="flex flex-col justify-center items-center mb-20">
+        <Heading text="Design that works for" highlight="you!" />
+
         <Carousel
           opts={{
             loop: true,
             align: "center",
           }}
-          className="w-full max-w-lg"
+          className="w-full max-w-screen-xl"
         >
           <CarouselContent className="flex items-center gap-4">
-            {["/img3.png", "/img1.png", "/img5.png", "/img6.png"].map((src, index) => (
+            {[
+              "/img7.png", "/img1.png", "/img2.png", "/img16.png",
+              "/img5.png", "/img4.png", "/img3.png", "/img8.png",
+              "/img9.png", "/img10.png", "/img11.png", "/img12.png",
+              "/img13.png", "/img14.png", "/img15.png", "/img6.png"
+            ].map((src, index) => (
               <CarouselItem
                 key={index}
                 className="basis-3/4 sm:basis-1/2 md:basis-1/3 w-auto"
               >
-                <div className="w-full h-[330px] md:h-[501px] relative">
+                <div className="w-full h-[300px] md:h-[501px] relative">
                   <Image
                     src={src}
                     alt={`image-${index}`}
                     layout="fill"
-                    objectFit="cover"
+                    objectFit="contain" // Keeps full image visible
                   />
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
       </section>
 
@@ -180,45 +185,7 @@ export default function Home() {
         </button>
       </div>
 
-      <section className="flex flex-col items-center justify-center bg-black min-h-screen p-10 space-y-10">
-        {/* Light Radial */}
-        <section className="flex flex-wrap gap-4 justify-center">
-          <div
-            className="w-[360px] h-[470px] flex items-center justify-center text-white font-bold text-2xl rounded-3xl"
-            style={{
-              background:
-                "linear-gradient(to bottom left, #FDB00B 0%, #FDA70F 36%, #FB8121 80%, #D24856 100%)",
-            }}
-          >
-            48-hour <br />
-            iteration cycles
-          </div>
-
-          <div
-            className="w-[360px] h-[470px] flex items-center justify-center text-white font-bold text-2x rounded-3xl"
-            style={{
-              background:
-                "linear-gradient(to top right, #66259D 0%, #B51F69 13%, #EC1B44 25%, #FBAA08 73%, #FBAA08 100%)",
-            }}
-          >
-            TEST <br />
-            iteration cycles
-          </div>
-
-          <div
-            className="w-[360px] h-[470px] flex items-center justify-center text-white font-bold text-2xl rounded-3xl"
-            style={{
-              background:
-                "linear-gradient(to bottom left, #66259D 0%, #B51F69 13%, #EC1B44 25%, #FBAA08 73%, #FBAA08 100%)",
-            }}
-          >
-            TEST <br />
-            iteration cycles
-          </div>
-        </section>
-
      
-      </section>
     </>
   );
 }

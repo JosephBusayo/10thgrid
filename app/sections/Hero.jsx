@@ -5,7 +5,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 function Hero() {
   return (
-    <div className="flex justify-center flex-col items-center gap-8 mb-20">
+    <div className="flex justify-center flex-col items-center gap-8 mb-32">
       <div className="flex flex-col items-center">
         <h1 className="text-[34px] md:text-[66px] leading-[39px] md:leading-[62px] text-center pb-6 tracking-[-4%]">
           We create designs for growing <span className="font-goudy italic">businesses</span>
