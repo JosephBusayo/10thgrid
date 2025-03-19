@@ -35,12 +35,12 @@ function Work() {
             className="w-[340px] h-[450px] px-6 flex items-center justify-center text-white font-bold text-2x rounded-3xl"
             style={{
               background:
-                "linear-gradient(to top right, #66259D 0%, #B51F69 13%, #EC1B44 25%, #FBAA08 73%, #FBAA08 100%)",
+                "linear-gradient(to top right, #66259D 0%, #B51F69 13%, #EC1B44 25%, #FBAA08 80%, #FBAA08 100%)",
             }}
           >
             <div className='flex flex-col h-full justify-between'>
               <div className='flex justify-center flex-col mx-auto h-full'>
-                <Image src="/v2.png" alt="web" width="65" height="50" />
+                <Image src="/v2.png" alt="web" width="50" height="40" />
               </div>
 
               <div className='flex flex-col align-bottom justify-end gap-3 px-4 pb-10'>
@@ -55,12 +55,12 @@ function Work() {
             className="w-[340px] h-[450px] px-6 flex items-center justify-center text-white font-bold text-2xl rounded-3xl"
             style={{
               background:
-                "linear-gradient(to bottom left, #66259D 0%, #B51F69 13%, #EC1B44 25%, #FBAA08 73%, #FBAA08 100%)",
+                "linear-gradient(220deg, #9C27B0 0%, #EC1B44 40%, #FF9800 100%)",
             }}
           >
             <div className='flex flex-col h-full justify-between'>
               <div className='flex justify-center flex-col mx-auto h-full'>
-                <Image src="/v1.png" alt="web" width="65" height="50" />
+                <Image src="/v1.png" alt="web" width="50" height="40" />
               </div>
 
               <div className='flex flex-col align-bottom justify-end gap-3 px-4 pb-10'>

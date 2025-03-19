@@ -35,7 +35,6 @@ export default function Navbar() {
                         FAQs
                     </ScrollLink>
                     <ScrollLink
-                        to="book-a-call"
                         smooth={true}
                         duration={500}
                         className="px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-300"

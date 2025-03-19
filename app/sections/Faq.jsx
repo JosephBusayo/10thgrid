@@ -10,7 +10,7 @@ import Heading from '@/components/ui/heading'
 
 function Faq() {
   return (
-    <>
+    <section id="faqs">
     <Heading text="FAQs"/>
     <Accordion type="single" collapsible className="flex flex-col px-4 gap-4 border-none mb-20 w-full md:w-[60%] mx-auto">
       <AccordionItem value="item-1" className="bg-[#181818] px-6 py-4 rounded-3xl border-none">
@@ -50,7 +50,7 @@ function Faq() {
       </AccordionItem>
 
     </Accordion>
-    </>
+    </section>
 
   )
 }
