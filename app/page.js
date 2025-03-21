@@ -32,10 +32,8 @@ export default function Home() {
         >
           <CarouselContent className="flex items-center gap-4">
             {[
-              "/img7.png", "/img1.png", "/img2.png", "/img16.png",
-              "/img5.png", "/img4.png", "/img3.png", "/img8.png",
-              "/img9.png", "/img10.png", "/img11.png", "/img12.png",
-              "/img13.png", "/img14.png", "/img15.png", "/img6.png"
+              "/img1.png", "/img2.png", "/img3.png",
+              "/img4.png", "/img6.png"
             ].map((src, index) => (
               <CarouselItem
                 key={index}
@@ -46,7 +44,7 @@ export default function Home() {
                     src={src}
                     alt={`image-${index}`}
                     layout="fill"
-                    objectFit="contain" // Keeps full image visible
+                    objectFit="contain"
                   />
                 </div>
               </CarouselItem>

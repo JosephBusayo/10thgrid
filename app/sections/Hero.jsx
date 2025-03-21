@@ -52,7 +52,9 @@ function Hero() {
       </div>
 
       <div className="flex gap-4 flex-col md:flex-row-reverse mt-4">
-        <Button >Book a free call <BsArrowUpRight/> </Button>
+        <a href="https://calendly.com/10thgriddesigns/30min" target="_blank" rel="noopener noreferrer">
+          <Button >Book a free call <Image src="/arrow-right-up-line.svg" alt="ico" height="18" width="18" /> </Button>
+        </a>
         <Button variant="outline">View plans</Button>
       </div>
     </div>
