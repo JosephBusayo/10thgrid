@@ -32,7 +32,7 @@ function Business() {
                   "linear-gradient(to bottom left, #7B17B9 0%, #FA8C9A 45%, #902700 100%)",
               }}
             >
-              <Image src="/web2.png" alt="web" width="65" height="50" />
+              <Image src="/web2.png" alt="web" width="55" height="50" />
             </div>
             <p className="text-[30px] tracking-[-4%]">Web design</p>
           </div>
@@ -45,7 +45,7 @@ function Business() {
                   "linear-gradient(to bottom left, #0D4504 0%, #211B1B 39%, #271022 63%, #2B0606 100%)",
               }}
             >
-              <Image src="/product.png" alt="product" width="50" height="30" />
+              <Image src="/product.png" alt="product" width="55" height="30" />
             </div>
             <p className="text-[30px] tracking-[-4%]">Product design</p>
           </div>
@@ -58,7 +58,7 @@ function Business() {
                   "linear-gradient(to bottom left, #4A3400 0%, #322A16 39%, #092727 63%, #001D35 100%)",
               }}
             >
-              <Image src="/brand2.png" alt="web" width="60" height="45" />
+              <Image src="/brand2.png" alt="web" width="50" height="40" />
             </div>
             <p className="text-[30px] tracking-[-4%]">Brand design</p>
           </div>
@@ -71,7 +71,7 @@ function Business() {
                   "linear-gradient(to bottom left, #00384E 0%, #270C2A 53%, #2A0001 100%)",
               }}
             >
-              <Image src="/logo2.png" alt="web" width="60" height="45" />
+              <Image src="/logo2.png" alt="web" width="50" height="40" />
             </div>
             <p className="text-[30px] tracking-[-4%]">Logo design</p>
           </div>
