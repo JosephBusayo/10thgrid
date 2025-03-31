@@ -36,8 +36,8 @@ function Hero() {
             Book a free call <Image src="/arrow-right-up-line.svg" alt="ico" height="18" width="18" />
           </Button>
         </a>
-        <ScrollLink to="pricing" smooth={true} duration={800} offset={-50}>
-          <Button variant="outline">View plans</Button>
+        <ScrollLink to="pricing" smooth={true} duration={800} offset={-50} className="w-full">
+          <Button variant="outline" className="w-full">View plans</Button>
         </ScrollLink>
       </div>
     </div>

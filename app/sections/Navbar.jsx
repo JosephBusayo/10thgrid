@@ -63,7 +63,7 @@ export default function Navbar() {
                     <button className="absolute top-5 right-5" onClick={toggleMenu}>
                         <X size={28} />
                     </button>
-                    <div className="flex flex-col items-center justify-center h-full space-y-6 text-lg">
+                    <div className="flex flex-col items-center pt-20 h-full space-y-6 text-lg">
                         <ScrollLink
                             to="pricing"
                             smooth={true}
@@ -87,7 +87,7 @@ export default function Navbar() {
                             smooth={true}
                             duration={500}
                             onClick={closeMenu}
-                            className="px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-300"
+                            className="px-4 py-2 bg-white text-black rounded-xl hover:bg-gray-300"
                         >
                             Book a Call
                         </ScrollLink>
