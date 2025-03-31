@@ -14,7 +14,16 @@ export default function Navbar() {
         <nav className="sticky top-0 left-0 w-full bg-black text-white z-50 shadow-md pt-10 mb-10">
             <div className="container mx-auto flex items-center justify-between px-6 py-4 md:px-16 md:py-6">
                 {/* Logo */}
-                <div> <Image src="/logo.png" alt="logo" width="50" height="30"  className="md:w-[70px] md:h-[46px]"/> </div>
+                <div>
+                    {" "}
+                    <Image
+                        src="/logo.png"
+                        alt="logo"
+                        width="50"
+                        height="30"
+                        className="md:w-[70px] md:h-[46px]"
+                    />{" "}
+                </div>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center space-x-6">
@@ -34,13 +43,11 @@ export default function Navbar() {
                     >
                         FAQs
                     </ScrollLink>
-                    <ScrollLink
-                        smooth={true}
-                        duration={500}
-                        className="px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-300"
-                    >
-                        Book a Call
-                    </ScrollLink>
+                    <a href="https://calendly.com/10thgriddesigns/discovery-call" target="_blank" rel="noopener noreferrer">
+                        <button className="px-4 py-2 bg-white text-black hover:bg-gray-300 rounded-xl">
+                            Book a Call
+                        </button>
+                    </a>
                 </div>
 
                 {/* Mobile Menu Button */}

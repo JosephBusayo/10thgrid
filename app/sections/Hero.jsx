@@ -1,8 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-/* import { Link as ScrollLink } from "react-scroll";
-import { Menu, X } from "lucide-react"; */
+import { Link as ScrollLink } from "react-scroll"; // Import react-scroll
 
 function Hero() {
   return (
@@ -18,45 +17,28 @@ function Hero() {
 
       <div className="flex gap-1 md:gap-24 text-[#D3D3D3]">
         <div className="flex items-center justify-center text-[11px] md:text-[22px]">
-          {" "}
           <p>Quality + speed</p>
-          <Image
-            src="/star.png"
-            alt="X"
-            width="17"
-            height="16"
-            className="mt-[-14px] ml-[-7px] w-[]"
-          />
+          <Image src="/star.png" alt="X" width="17" height="16" className="mt-[-14px] ml-[-7px]" />
         </div>
         <div className="flex items-center justify-center text-[11px] md:text-[22px]">
-          {" "}
           <p>48-hour iteration cycles</p>
-          <Image
-            src="/star.png"
-            alt="X"
-            width="17"
-            height="16"
-            className="mt-[-14px] ml-[-7px]"
-          />{" "}
+          <Image src="/star.png" alt="X" width="17" height="16" className="mt-[-14px] ml-[-7px]" />
         </div>
         <div className="flex items-center justify-center text-[11px] md:text-[22px]">
-          {" "}
           <p>Cancel anytime</p>
-          <Image
-            src="/star.png"
-            alt="X"
-            width="17"
-            height="16"
-            className="mt-[-14px] ml-[-7px]"
-          />{" "}
+          <Image src="/star.png" alt="X" width="17" height="16" className="mt-[-14px] ml-[-7px]" />
         </div>
       </div>
 
       <div className="flex gap-4 flex-col md:flex-row-reverse mt-4">
         <a href="https://calendly.com/10thgriddesigns/discovery-call" target="_blank" rel="noopener noreferrer">
-          <Button >Book a free call <Image src="/arrow-right-up-line.svg" alt="ico" height="18" width="18" /> </Button>
+          <Button>
+            Book a free call <Image src="/arrow-right-up-line.svg" alt="ico" height="18" width="18" />
+          </Button>
         </a>
-        <Button variant="outline">View plans</Button>
+        <ScrollLink to="pricing" smooth={true} duration={800} offset={-50}>
+          <Button variant="outline">View plans</Button>
+        </ScrollLink>
       </div>
     </div>
   );
