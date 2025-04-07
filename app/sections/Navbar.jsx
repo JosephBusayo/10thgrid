@@ -43,7 +43,7 @@ export default function Navbar() {
                     >
                         FAQs
                     </ScrollLink>
-                    <a href="https://calendly.com/10thgriddesigns/discovery-call" target="_blank" rel="noopener noreferrer">
+                    <a href="https://calendly.com/joetechhashira/discovery-call" target="_blank" rel="noopener noreferrer">
                         <button className="px-4 py-2 bg-white text-black hover:bg-gray-300 rounded-xl">
                             Book a Call
                         </button>
@@ -83,7 +83,7 @@ export default function Navbar() {
                             FAQs
                         </ScrollLink>
                         <ScrollLink
-                            to="book-a-call"
+                            to="https://calendly.com/joetechhashira/discovery-call"
                             smooth={true}
                             duration={500}
                             onClick={closeMenu}

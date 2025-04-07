@@ -9,7 +9,7 @@ function Footer() {
       <h2 className={`text-[36px] md:text-[48px] text-center max-w-[300px] md:max-w-[410px] mx-auto leading-[38px] pb-6 tracking-[-4%]`}>
         Not sure if <span className="font-goudy italic">10th Grid</span> is the right choice for you?
       </h2>
-      <a href="https://calendly.com/10thgriddesigns/discovery-call" target="_blank" rel="noopener noreferrer" className="mx-auto">
+      <a href="https://calendly.com/joetechhashira/discovery-call" target="_blank" rel="noopener noreferrer" className="mx-auto">
         <Button className="mx-auto">Book a free call <Image src="/arrow-right-up-line.svg" alt="ico" height="18" width="18" /> </Button>
       </a>
 

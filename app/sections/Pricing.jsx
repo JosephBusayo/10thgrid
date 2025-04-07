@@ -12,7 +12,7 @@ const pricingOptions = [
     features: ["Comprehensive market research", "Custom UI/UX design", "Conversion-optimized pages", "SEO-friendly structure", "2 rounds of revisions", "1 week delivery"],
     bgColor: 'bg-[#151515]',
     color: "text-[#FF9000]",
-    button: <a href="" target="_blank" rel="noopener noreferrer"> <Button variant="secondary" className="mt-6 w-full text-white py-3 rounded-[20px]">Start a project</Button></a>
+    button: <a href="https://calendly.com/10thgriddesigns/30min" target="_blank" rel="noopener noreferrer"> <Button variant="secondary" className="mt-6 w-full text-white py-3 rounded-[20px]">Start a project</Button></a>
   },
   {
     title: 'Brand Identity',
@@ -23,7 +23,7 @@ const pricingOptions = [
     features: ["Primary logo + variations", "Custom color palette", "Typography selection", "Social media assets", "Business card design", "1 week delivery"],
     bgColor: 'bg-[#151515]',
     color: "text-[#24EF42]",
-    button:<a href='' target="_blank" rel="noopener noreferrer"> <Button variant="secondary" className="mt-6 w-full text-white py-3 rounded-[20px]">Start a project</Button> </a>
+    button:<a href='https://calendly.com/10thgriddesigns/30min' target="_blank" rel="noopener noreferrer"> <Button variant="secondary" className="mt-6 w-full text-white py-3 rounded-[20px]">Start a project</Button> </a>
   },
   {
     title: 'Design partner',
