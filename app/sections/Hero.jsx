@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className="flex justify-center flex-col items-center gap-8 mb-32">
       <div className="flex flex-col items-center">
-        <h1 className="text-[34px] md:text-[66px] leading-[39px] md:leading-[62px] text-center pb-6 tracking-[-4%]">
+        <h1 className="text-[34px] md:w-[42vw] md:text-[66px] leading-[39px] md:leading-[62px] text-center pb-6 tracking-[-4%]">
           We create designs for growing <span className="font-goudy italic text-[36px] md:text-[68px]">businesses</span>
         </h1>
         <p className="text-center pb-8 text-[#868686] text-[16px] leading-[18px] md:text-[22px] md:leading-[26px] max-w-[248px] md:max-w-none">
