@@ -51,12 +51,12 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button className="md:hidden" onClick={toggleMenu}>
+               {/*  <button className="md:hidden" onClick={toggleMenu}>
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
-                </button>
+                </button> */}
 
                 {/* Mobile Menu */}
-                <div
+                {/* <div
                     className={`fixed top-0 right-0 h-full w-2/3 bg-black text-white shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"
                         } transition-transform duration-300 ease-in-out md:hidden`}
                 >
@@ -92,7 +92,7 @@ export default function Navbar() {
                             Book a Call
                         </ScrollLink>
                     </div>
-                </div>
+                </div> */}
             </div>
         </nav>
     );
