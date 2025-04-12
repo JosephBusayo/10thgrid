@@ -35,12 +35,12 @@ function Hero() {
 
       <div className="flex gap-4 flex-col md:flex-row-reverse mt-4">
         <a href="https://calendly.com/10thgriddesigns/discovery-call" target="_blank" rel="noopener noreferrer">
-          <Button className="w-full md:px-12 md:py-7">
+          <Button className="w-full md:px-10 md:py-7">
             Book a free call <Image src="/arrow-right-up-line.svg" alt="ico" height="18" width="18" />
           </Button>
         </a>
         <ScrollLink to="pricing" smooth={true} duration={800} offset={-50} className="w-full">
-          <Button variant="outline" className="w-full md:px-12 md:py-7">View plans</Button>
+          <Button variant="outline" className="w-full md:px-10 md:py-7">View plans</Button>
         </ScrollLink>
       </div>
     </div>

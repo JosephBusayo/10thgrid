@@ -10,6 +10,13 @@ import Footer from "./sections/Footer";
 import Image from "next/image";
 import Heading from "@/components/ui/heading";
 import { motion } from "framer-motion";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -33,25 +40,45 @@ export default function Home() {
       <Hero />
 
       <section className="flex flex-col justify-center items-center mb-20 overflow-hidden">
-        <Heading text="Design that works for" highlight="you!" />
+        <Heading
+          text="Design that works for"
+          highlight="you!"
+          className="mb-8" // Added consistent bottom margin
+        />
 
-        <div className="w-full max-w-screen-xl relative overflow-hidden">
-          <motion.div
-            ref={containerRef}
-            className="flex items-center gap-4"
-            animate={{ x: [0, -width / 2] }}
-            transition={{ duration: 15, ease: "linear", repeat: Infinity }}
+        <div className="w-full max-w-screen-xl relative">
+          <Carousel
+            opts={{
+              loop: true,
+              align: "center",
+              dragFree: true,
+            }}
+            className="w-full"
           >
-            {images.map((src, index) => (
-              <div key={index} className="flex-shrink-0 w-[300px] md:w-[400px] mx-2">
-                <div className="w-full h-[300px] md:h-[501px] relative">
-                  <Image src={src} alt={`image-${index}`} layout="fill" objectFit="contain" />
-                </div>
-              </div>
-            ))}
-          </motion.div>
+            <CarouselContent className="flex items-center gap-5 px-4">
+              {["/img1.png", "/img2.png", "/img3.png", "/img4.png"].map((src, index) => (
+                <CarouselItem
+                  key={index}
+                  className="basis-50 sm:basis-1/2 md:basis-4/6"
+                >
+                  <div className="w-[300px] md:w-[758px] h-[200px] md:h-[501px] relative">
+                    <Image
+                      src={src}
+                      alt={`image-${index}`}
+                      layout="fill"
+                      className="object-contain w-full h-full"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+
+            <CarouselPrevious className="hidden md:block absolute left-2 top-1/2 -translate-y-1/2 z-10" />
+            <CarouselNext className="hidden md:block absolute right-2 top-1/2 -translate-y-1/2 z-10" />
+          </Carousel>
         </div>
       </section>
+
 
       <Business />
       <Work />
