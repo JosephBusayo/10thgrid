@@ -69,7 +69,7 @@ function Card({ title, description, imageSrc, imageWidth, imageHeight, gradient,
 
 function Work() {
   return (
-    <div className="pt-0 md:pt-5 mb-20 bg-black md:mt-40">
+    <div className="pt-0 md:pt-5 mb-32 bg-black md:mt-40">
       <Heading text="Here's how we" highlight="work" className="max-w-[270px] md:max-w-[450px]"/>
       <section className="flex flex-col items-center justify-center py-10">
         <div className="flex flex-wrap justify-center gap-6 md:gap-20">

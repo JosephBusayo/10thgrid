@@ -4,7 +4,7 @@ import React from "react";
 
 function Business() {
   return (
-    <div className="flex items-center flex-col-reverse md:flex-col gap-20 text-center mb-20">
+    <div className="flex items-center flex-col-reverse md:flex-col gap-20 text-center mb-32">
       <div className="mb-20">
         <Heading text="You are our only" highlight="client!" />
         <p className="text-[#868686] text-[16px] md:text-[32px] text-center px-9 md:px-80">

@@ -81,7 +81,7 @@ const pricingOptions = [
 
 export default function Pricing() {
   return (
-    <section className="py-20 px-6 flex flex-col items-center" id="pricing">
+    <section className="py-20 px-6 flex flex-col mb-32 items-center" id="pricing">
       <Heading
         text="Flexible pricing, Limitless"
         highlight="possibilities"

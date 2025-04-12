@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-[radial-gradient(circle,#F0BC00,#FFC800)] text-black shadow hover:opacity-90 border border-[#FFD84C]",
+          "bg-[radial-gradient(circle,#F0BC00,#FFC800)] text-black shadow-[0px_0px_50px_10px_rgba(255,200,0,0.3)] hover:shadow-[0_0_12px_6px_rgba(255,200,0,0.4)] border border-[#FFD84C]",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
