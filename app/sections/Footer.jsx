@@ -13,6 +13,15 @@ function Footer() {
         <Button className="mx-auto">Book a free call <Image src="/arrow-right-up-line.svg" alt="ico" height="18" width="18" /> </Button>
       </a>
 
+      <div>
+        <Image
+          src="/oplogo.svg"
+          alt="logo"
+          width="236"
+          height="143"
+          className="md:w-[528px] md:h-[352px] m-auto mt-36"
+        />
+      </div>
     </div>
   )
 }

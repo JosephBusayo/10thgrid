@@ -5,7 +5,7 @@ import Image from 'next/image';
 const pricingOptions = [
   {
     title: 'Website only',
-    icon: <Image src="/web.png" alt="p-icon" width="24" height="18" />,
+    icon: <Image src="/web.svg" alt="p-icon" width="24" height="18" />,
     price: '$999',
     billing: 'Billed per project',
     description: 'Get a fully custom, high-performing website designed to impress and convert.',
@@ -16,7 +16,7 @@ const pricingOptions = [
   },
   {
     title: 'Brand Identity',
-    icon: <Image src="/brand.png" alt="p-icon" width="24" height="18" />,
+    icon: <Image src="/brand.svg" alt="p-icon" width="24" height="18" />,
     price: '$799',
     billing: 'Billed per project',
     description: 'A strong brand starts with a bold identity. We create logos that leave a lasting impression.',
@@ -27,7 +27,7 @@ const pricingOptions = [
   },
   {
     title: 'Design partner',
-    icon: <Image src="/partner.png" alt="p-icon" width="24" height="18" />,
+    icon: <Image src="/partner.svg" alt="p-icon" width="24" height="18" />,
     price: '$1500',
     billing: 'Billed monthly',
     description: 'All-in-one design solution. We don’t just create; we maintain and evolve your brand.',
@@ -63,7 +63,7 @@ export default function Pricing() {
               <div className="flex items-center gap-2 text-[16px] font-semibold">
                 {option.icon} <span className={option.color}>{option.title}</span>
               </div>
-              <div className="mt-4 text-2xl font-bold">{option.price}</div>
+              <div className="mt-4 text-4xl font-bold">{option.price}</div>
               <p className="text-[16px] text-[#606060]">{option.billing}</p>
               <p className="mt-4 text-sm">{option.description}</p>
             </div>

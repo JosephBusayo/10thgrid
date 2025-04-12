@@ -15,14 +15,13 @@ export default function Navbar() {
             <div className="container mx-auto flex items-center justify-between px-6 py-4 md:px-16 md:py-6">
                 {/* Logo */}
                 <div>
-                    {" "}
                     <Image
-                        src="/logo.png"
+                        src="/logo.svg"
                         alt="logo"
                         width="50"
                         height="30"
                         className="md:w-[70px] md:h-[46px]"
-                    />{" "}
+                    />
                 </div>
 
                 {/* Desktop Menu */}
