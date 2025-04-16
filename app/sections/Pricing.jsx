@@ -20,7 +20,7 @@ const pricingOptions = [
     bgColor: 'bg-[#151515]',
     color: 'text-[#FF9000]',
     button: (
-      <a href="https://calendly.com/10thgriddesigns/30min" target="_blank" rel="noopener noreferrer">
+      <a href="https://10thgrid.lemonsqueezy.com/buy/4a827e72-d35b-4ff1-a0d4-2afaf05da12f" target="_blank" rel="noopener noreferrer">
         <Button variant="secondary" className="mt-6 w-full text-white py-3 rounded-[20px]">
           Start a project
         </Button>
@@ -44,7 +44,7 @@ const pricingOptions = [
     bgColor: 'bg-[#151515]',
     color: 'text-[#24EF42]',
     button: (
-      <a href="https://calendly.com/10thgriddesigns/30min" target="_blank" rel="noopener noreferrer">
+      <a href="https://10thgrid.lemonsqueezy.com/buy/6ee9838d-bc35-40ae-831e-d17151a4057d" target="_blank" rel="noopener noreferrer">
         <Button variant="secondary" className="mt-6 w-full text-white py-3 rounded-[20px]">
           Start a project
         </Button>
